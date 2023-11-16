@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c949f46-61cb-4f31-9ac8-c55e744e9c9a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/data/UserPOJOClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/data/Users.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/data/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/APIDisposeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/APIPostCallRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/APIResponseHeadersTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreatePostCallUsingPOJOClassTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreatePostCallUsingPOJOWithLombok.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreateUserUsingJSONFileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreateUserWithJSONStringTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/getAPICallRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/data/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/data/Users.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
