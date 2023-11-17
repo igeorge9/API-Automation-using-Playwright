@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c949f46-61cb-4f31-9ac8-c55e744e9c9a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/DELETE/DeleteUserAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/PUT/UpdateUserUsingPutCallWithLombok.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/api/data/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/api/data/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/APIDisposeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/GET/APIDisposeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/APIPostCallRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/POST/APIPostCallRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/APIResponseHeadersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/GET/APIResponseHeadersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreatePostCallUsingPOJOClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/POST/CreatePostCallUsingPOJOClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreatePostCallUsingPOJOWithLombok.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/POST/CreatePostCallUsingPOJOWithLombok.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreateUserUsingJSONFileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/POST/CreateUserUsingJSONFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/CreateUserWithJSONStringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/POST/CreateUserWithJSONStringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/getAPICallRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/api/tests/GET/getAPICallRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,17 +56,17 @@
       <recent name="com.api.data" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.CreatePostCallUsingPOJOWithLombok.createUserTest">
-    <configuration name="CreatePostCallUsingPOJOClassTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.DeleteUserAPITest">
+    <configuration name="DeleteUserAPITest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Playwright-API-Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qa.api.tests.*" />
+          <option name="PATTERN" value="com.qa.api.tests.DELETE.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qa.api.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.CreatePostCallUsingPOJOClassTest" />
+      <option name="PACKAGE_NAME" value="com.qa.api.tests.DELETE" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.DELETE.DeleteUserAPITest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -64,33 +74,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatePostCallUsingPOJOClassTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="DeleteUserAPITest.createUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Playwright-API-Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qa.api.tests.*" />
+          <option name="PATTERN" value="com.qa.api.tests.DELETE.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qa.api.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.CreatePostCallUsingPOJOClassTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CreatePostCallUsingPOJOClassTest.createUserTest (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Playwright-API-Automation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qa.api.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qa.api.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.CreatePostCallUsingPOJOClassTest" />
+      <option name="PACKAGE_NAME" value="com.qa.api.tests.DELETE" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.DELETE.DeleteUserAPITest" />
       <option name="METHOD_NAME" value="createUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -99,16 +92,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatePostCallUsingPOJOClassTest.createUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UpdateUserUsingPutCallWithLombok" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Playwright-API-Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qa.api.tests.*" />
+          <option name="PATTERN" value="com.qa.api.tests.PUT.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qa.api.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.CreatePostCallUsingPOJOClassTest" />
+      <option name="PACKAGE_NAME" value="com.qa.api.tests.PUT" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.PUT.UpdateUserUsingPutCallWithLombok" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateUserUsingPutCallWithLombok.createUserTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Playwright-API-Automation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qa.api.tests.PUT.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qa.api.tests.PUT" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.PUT.UpdateUserUsingPutCallWithLombok" />
       <option name="METHOD_NAME" value="createUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -117,16 +127,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreatePostCallUsingPOJOWithLombok.createUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UpdateUserUsingPutCallWithLombok.createUserTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Playwright-API-Automation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qa.api.tests.*" />
+          <option name="PATTERN" value="com.qa.api.tests.PUT.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qa.api.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.CreatePostCallUsingPOJOWithLombok" />
+      <option name="PACKAGE_NAME" value="com.qa.api.tests.PUT" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.api.tests.PUT.UpdateUserUsingPutCallWithLombok" />
       <option name="METHOD_NAME" value="createUserTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -137,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreatePostCallUsingPOJOWithLombok.createUserTest" />
-        <item itemvalue="TestNG.CreatePostCallUsingPOJOClassTest (1)" />
-        <item itemvalue="TestNG.CreatePostCallUsingPOJOClassTest.createUserTest" />
-        <item itemvalue="TestNG.CreatePostCallUsingPOJOClassTest.createUserTest (2)" />
-        <item itemvalue="TestNG.CreatePostCallUsingPOJOClassTest" />
+        <item itemvalue="TestNG.DeleteUserAPITest" />
+        <item itemvalue="TestNG.DeleteUserAPITest.createUserTest" />
+        <item itemvalue="TestNG.UpdateUserUsingPutCallWithLombok.createUserTest" />
+        <item itemvalue="TestNG.UpdateUserUsingPutCallWithLombok.createUserTest (1)" />
+        <item itemvalue="TestNG.UpdateUserUsingPutCallWithLombok" />
       </list>
     </recent_temporary>
   </component>

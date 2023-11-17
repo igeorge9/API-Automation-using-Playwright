@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.GET;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -27,21 +27,21 @@ public class APIDisposeTest {
 
     @Test
     public void getUsersAPITest() throws IOException {
-        APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users");
-        int statusCode = apiResponse.status();
+        APIResponse apiGetCallResponse = requestContext.get("https://gorest.co.in/public/v2/users");
+        int statusCode = apiGetCallResponse.status();
         System.out.println("Response status code is " + statusCode);
         Assert.assertEquals(statusCode, 200);
-        Assert.assertTrue(apiResponse.ok());
+        Assert.assertTrue(apiGetCallResponse.ok());
 //                Assert.assertEquals(apiResponse.ok(),true); =====>>  same as above statement
-        String statusText = apiResponse.statusText();
+        String statusText = apiGetCallResponse.statusText();
         System.out.println("Response status text is " + statusText);
 
         ObjectMapper objectMapper = new ObjectMapper();
-        JsonNode jsonNode = objectMapper.readTree(apiResponse.body());
+        JsonNode jsonNode = objectMapper.readTree(apiGetCallResponse.body());
         String prettyJsonResponse = jsonNode.toPrettyString();
         System.out.println("===================== Printing the API Response =====================");
         System.out.println(prettyJsonResponse);
-        apiResponse.dispose();
+        apiGetCallResponse.dispose();
 /*
             dispose() method will dispose only the body, but the status code and status text will remain the same.
             Also, it will give Playwright Exception as follows. Hence, catch it inside a try-catch block and give appropriate error message.
@@ -56,15 +56,15 @@ public class APIDisposeTest {
 
         try {
             System.out.println("========= Printing the API Response in plain text format after disposing the body ===========");
-            System.out.println(apiResponse.text());
+            System.out.println(apiGetCallResponse.text());
         } catch (PlaywrightException e) {
             System.out.println("Response has been disposed");
         }
 
-        int statusCode1 = apiResponse.status();
+        int statusCode1 = apiGetCallResponse.status();
         System.out.println("Response status code after dispose is " + statusCode1);
 
-        String statusText1 = apiResponse.statusText();
+        String statusText1 = apiGetCallResponse.statusText();
         System.out.println("Response status text after dispose is " + statusText1);
 
     }

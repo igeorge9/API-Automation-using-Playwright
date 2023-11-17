@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.POST;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -13,9 +13,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
-public class CreateUserWithJSONStringTest {
-
+public class APIPostCallRequest {
     Playwright playwright;
     APIRequest apiRequest;
     APIRequestContext requestContext;
@@ -28,24 +29,26 @@ public class CreateUserWithJSONStringTest {
         requestContext = apiRequest.newContext();
     }
 
-//    Here we are inserting the JSON String in hard coded way. If the JSON is dynamic , we cannot approach this way.
-//    This approach is applicable when the JSON is static and the values will not be changed anytime.
+    public String generateEmailId() {
+        emailId = "playwrightautomation" + System.currentTimeMillis() + "@gmail.com";
+        return emailId;
+    }
 
     @Test
     public void createUserTest() throws IOException {
-        String requestJSONBody = "{\n" +
-                "            \"name\" : \"Vinay Devgan\",\n" +
-                "            \"email\" : \"playwrightautomationtest01@gmail.com\",\n" +
-                "            \"gender\" : \"male\",\n" +
-                "            \"status\" : \"inactive\"\n" +
-                "    }";
+
+        Map<String, Object> data = new HashMap<String, Object>();
+        data.put("name", "Amala Maria");
+        data.put("email", generateEmailId());
+        data.put("status", "active");
+        data.put("gender", "female");
 
 //        POST call : Create a user
         APIResponse apiResponse = requestContext.post("https://gorest.co.in/public/v2/users",
                 RequestOptions.create()
                         .setHeader("Content-type", "Application/json")
                         .setHeader("Authorization", "Bearer 38d20a9503c4e6502c70d9154ae2e7e4e5654bdd4d1a9a38dd5275b87adaa11c")
-                        .setData(requestJSONBody));
+                        .setData(data));
         Assert.assertTrue(apiResponse.ok());
         Assert.assertEquals(apiResponse.statusText(), "Created");
         System.out.println("Status code : " + apiResponse.status());
@@ -78,7 +81,9 @@ public class CreateUserWithJSONStringTest {
 //       How to validate the data from get Call response corresponding to the ID
 
         Assert.assertTrue(getCallResponseFetchByUserId.text().contains(userId));
-        Assert.assertTrue(getCallResponseFetchByUserId.text().contains("Vinay Devgan"));
+        Assert.assertTrue(getCallResponseFetchByUserId.text().contains("Amala Maria"));
+        Assert.assertTrue(getCallResponseFetchByUserId.text().contains("female"));
+        Assert.assertTrue(getCallResponseFetchByUserId.text().contains(emailId));
     }
 
     @AfterTest

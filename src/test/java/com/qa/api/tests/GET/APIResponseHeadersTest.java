@@ -1,4 +1,4 @@
-package com.qa.api.tests;
+package com.qa.api.tests.GET;
 
 import com.microsoft.playwright.APIRequest;
 import com.microsoft.playwright.APIRequestContext;
@@ -26,14 +26,14 @@ public class APIResponseHeadersTest {
     }
 @Test
 public void getHeadersTest() {
-    APIResponse apiResponse = requestContext.get("https://gorest.co.in/public/v2/users");
-    int statusCode = apiResponse.status();
+    APIResponse apiGetCallResponse = requestContext.get("https://gorest.co.in/public/v2/users");
+    int statusCode = apiGetCallResponse.status();
     System.out.println("Response status code is " + statusCode);
     Assert.assertEquals(statusCode, 200);
 
 //   Using Map - headers() method.
 
-    Map<String,String> headersMap = apiResponse.headers();
+    Map<String,String> headersMap = apiGetCallResponse.headers();
     headersMap.forEach((key,value) -> System.out.println(key+" : "+value));
     System.out.println("Total number of response headers : " +headersMap.size());
     Assert.assertEquals(headersMap.get("server"),"cloudflare");
@@ -41,7 +41,7 @@ public void getHeadersTest() {
 
 //    Using List - HeadersArray - headersArray() method
     System.out.println("================Using List - HeadersArray - headersArray() method ================");
-    List<HttpHeader> headersList=apiResponse.headersArray();
+    List<HttpHeader> headersList=apiGetCallResponse.headersArray();
     for(HttpHeader header: headersList)
     {
         System.out.println(header.name+" : "+header.value);
